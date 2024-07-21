@@ -1,0 +1,263 @@
+.hh{
+	background-color:#0033cc;
+	color:white;
+	height:5%;
+	padding:10px 10px;
+	text-align:center;
+}
+
+.custom_menu-btn {
+  left: 25px;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+	z-index:99;
+}
+
+.custom_menu-btn::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display:none;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+  z-index: 1;
+  border-radius: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.custom_menu-btn.menu_btn-style::before {
+  width: 100vh;
+  height: 100vh;
+  background-color: #160e0b;
+  -webkit-transform: scale(5);
+          transform: scale(5);
+  border-radius: 0;
+}
+
+.custom_menu-btn button {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  margin: 0;
+}
+
+.custom_menu-btn button span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  margin: 2.5px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 15px;
+}
+
+.custom_menu-btn .s-2 {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.menu_btn-style button span {
+  background-color: black;
+}
+
+.menu_btn-style button .s-1 {
+  -webkit-transform: rotate(45deg) translate(6px, 6px);
+          transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu_btn-style button .s-2 {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+		background:transparent;
+}
+
+.menu_btn-style button .s-3 {
+  -webkit-transform: rotate(-45deg) translate(5px, -5px);
+          transform: rotate(-45deg) translate(5px, -5px);
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 9;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 60px;
+  background-color:black;
+}
+
+.overlay a {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 15px;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.overlay a:hover {
+  color: #fd9c6b;
+}
+
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 70%;
+  text-align: center;
+  margin-top: 30px;
+  z-index: 99;
+}
+
+.menu_width {
+  width: 20%;
+}
+
+.menu_width.overlay a {
+  opacity: 1;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color:black ;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.navbar-brand{
+	margin-left:40px;
+	padding-top:10px;
+	color:black;
+}
+.navbar-brand1{
+	padding-top:10px;
+	color:black;
+	float:right;
+}
+.navbar-brand2{
+	padding-top:10px;
+	color:black;
+	float:right;
+	margin-right:10px;
+}
+nav{
+	background-color:#ECEAEA;
+}
+.sreach{
+	float:right;
+}
+.bg-img{
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:relative;
+	/*background-image:url('D:/internship/img/vecteezy_ai-generated-beautiful-background-for-smoothie-advertising_38811505.jpeg');*/
+}
+.navbar{
+	    position: fixed;
+    width: 100%;
+	padding:40px;
+	background: transparent;
+}
+.content-ceneter{
+	    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+	color:#ff9900;
+	font-family: cursive;
+}
+.content-ceneter2{
+	    position: absolute;
+    top: 53%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+	color:black;
+	font-family: Georgia;
+}
+.content-ceneter3{
+	    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+	color:black;
+	font-family: Georgia;
+}
+.content-bottom{
+	 position: absolute;
+  	bottom: 1px;
+  	left: 150px;
+	color:#ff9900;
+	font-size: 25px;
+	font-family: Georgia;
+	border:4px solid #ff9900;
+	border-radius:10px;
+	padding:10px;
+	font-weight:bold;
+	background-color:white;
+}
+.our-menu{
+	font-family: cursive;
+	font-size:45px;
+	font-weight:bold;
+}
+.title{
+	padding:10px;
+	margin-left:20px;
+}
+.title1{
+	padding:10px;
+	margin-left:70px;
+}
+.details{
+	font-size: 20px;
+    font-weight: initial;
+}
